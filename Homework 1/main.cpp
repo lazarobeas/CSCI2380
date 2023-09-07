@@ -19,12 +19,14 @@ int main()
 {
 	// Create a bunch of pokemon objects. 
 	// (Data taken from the official list, plz don't sue me The Pokemon Company)
+	// This calls the first constructor object
 	Pokemon bouffalant("Bouffalant", 626, Pokemon::Normal);
 	Pokemon cinccino("Cinccino", 573, Pokemon::Normal);
 	Pokemon garbodor("Garbodor", 569, Pokemon::Poison);
 	Pokemon mankey("Mankey", 56, Pokemon::Fighting);
 	Pokemon tornadus("Tornadus", 641, Pokemon::Flying);
 
+	// This is calling the second constructor object
 	Pokemon pidgey("Pidgey", 16, Pokemon::Normal, Pokemon::Flying);
 	Pokemon fletchling("Fletchling", 661, Pokemon::Normal, Pokemon::Flying);
 	Pokemon zubat("Zubat", 41, Pokemon::Poison, Pokemon::Flying);
@@ -34,6 +36,7 @@ int main()
 	Pokemon pikachu("Pikachu", 001, Pokemon::Normal, Pokemon::Poison);
 
 	// Test name()	
+	// This will test if the name matches the object
 	test(bouffalant.name() == "Bouffalant");
 	test(cinccino.name() == "Cinccino");
 	test(garbodor.name() == "Garbodor");
@@ -48,6 +51,7 @@ int main()
 	test(pikachu.name() == "Pikachu");
 
 	// Test Ndex()	
+	// This tests if the index is correct
 	test(bouffalant.Ndex() == 626);
 	test(cinccino.Ndex() == 573);
 	test(garbodor.Ndex() == 569);
